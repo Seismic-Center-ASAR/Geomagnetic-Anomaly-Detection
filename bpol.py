@@ -4,13 +4,13 @@ import matplotlib.pyplot as plt
 from scipy import signal
 
 # Load data
-df = pd.read_csv('fdata.csv')
+df = pd.read_csv('27.csv')
 
 # Convert datetime column to datetime type
 df['datetime'] = pd.to_datetime(df['Date/Time (UT)'])
 
 # Filter data intervals, modify dates with your target interval
-df_filtered = df[(df['datetime'] >= '2023-3-17') & (df['datetime'] <= '2023-3-20')]
+df_filtered = df[(df['datetime'] >= '2018-10-23') & (df['datetime'] <= '2018-10-27')]
 #df_filtered = df[df['datetime'].dt.date == pd.to_datetime('2004-10-27').date()]
 
 
